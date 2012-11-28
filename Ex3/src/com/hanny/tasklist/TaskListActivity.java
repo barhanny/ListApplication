@@ -6,23 +6,31 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class TaskListActivity extends Activity {
 
 	private TaskListBaseAdapter adapter;
-	private Context context;
+	//private Context context;
     
     public void onCreate(Bundle savedInstanceState) {
     	
+	    requestWindowFeature(Window.FEATURE_NO_TITLE);
+	    getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+	    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+	    
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_list);
         
-        context = this;
+        //context = this;
         Button addTask = (Button)findViewById(R.id.add_task);
+        TextView deleteMsg = (TextView)findViewById(R.id.delete_msg);
         
 
         
@@ -49,17 +57,6 @@ public class TaskListActivity extends Activity {
 		
 	}
     
-    public void DoneButton(View v) {
-    	Button taskButton = (Button)findViewById(R.id.task_image);
-    	Toast.makeText(context, "going to  done ",2000).show();
-    	if(v == taskButton) {
-    		taskButton.setBackgroundResource(R.drawable.taskicon);
-    		Toast.makeText(context, "done done ",3000).show();
-    	} //else{
-    		//taskButton.setBackgroundResource(R.drawable.taskicon);
-    		//Toast.makeText(context, "done ",2000).show();
-    	//}
-    }
     
     
     

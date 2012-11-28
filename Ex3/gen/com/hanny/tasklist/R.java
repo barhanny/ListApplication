@@ -11,22 +11,24 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_action_search=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int taskicon=0x7f020002;
-        public static final int taskicon1=0x7f020003;
-        public static final int todo=0x7f020004;
+        public static final int done_button_custom=0x7f020000;
+        public static final int ic_action_search=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int taskicon_default=0x7f020003;
+        public static final int taskicon_push=0x7f020004;
+        public static final int todo=0x7f020005;
     }
     public static final class id {
         public static final int add_task=0x7f070003;
         public static final int create=0x7f070001;
+        public static final int delete_msg=0x7f070004;
         public static final int description=0x7f070002;
-        public static final int menu_settings=0x7f070009;
-        public static final int task_description=0x7f070008;
-        public static final int task_image=0x7f070005;
-        public static final int task_list=0x7f070004;
-        public static final int task_title=0x7f070007;
-        public static final int text_layout=0x7f070006;
+        public static final int menu_settings=0x7f07000a;
+        public static final int task_button=0x7f070006;
+        public static final int task_description=0x7f070009;
+        public static final int task_list=0x7f070005;
+        public static final int task_title=0x7f070008;
+        public static final int text_layout=0x7f070007;
         public static final int title=0x7f070000;
     }
     public static final class layout {
@@ -41,6 +43,7 @@ public final class R {
     public static final class string {
         public static final int add_task=0x7f040003;
         public static final int app_name=0x7f040000;
+        public static final int clear=0x7f04000a;
         public static final int create=0x7f040008;
         public static final int description=0x7f040005;
         public static final int done=0x7f040007;

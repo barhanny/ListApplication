@@ -10,6 +10,16 @@
     	android:text="@string/add_task"
     	android:textSize="18dp"
     	/>
+    <TextView 
+        android:id="@+id/delete_msg"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/add_task"
+    	android:paddingRight="15dp"
+    	android:paddingTop="10dp"
+    	android:text="@string/clear"
+    	android:textSize="14dp"
+        />
     <ListView 
         android:id="@+id/task_list"
         android:layout_width="wrap_content"

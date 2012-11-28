@@ -10,5 +10,6 @@
     <string name="done">Done</string>
     <string name="create">Create</string>
     <string name="img_description">task image</string>
+    <string name="clear">To remove the task, Tap on the title</string>
 
 </resources>
